@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "~3.10"
 
 [tool.poetry.scripts]
 pytools = 'pytools.__main__:main'
@@ -22,4 +22,11 @@ optional = true
 [tool.poetry.group.format.dependencies]
 black = "^24.3.0"
 pyproject-flake8 = "^6.1"
+
+[tool.black]
+line-length = 160
+target-version = ["py39"]
+
+[tool.flake8]
+exclude = ["venv/", ".tox/"]
 
