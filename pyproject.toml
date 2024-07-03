@@ -21,4 +21,5 @@ optional = true
 
 [tool.poetry.group.format.dependencies]
 black = "^24.3.0"
+pyproject-flake8 = "^6.1"
 
