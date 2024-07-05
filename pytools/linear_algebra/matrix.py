@@ -39,6 +39,6 @@ class Matrix:
         return "\n".join([" ".join(map(str, row)) for row in self.data])
 
 if __name__ == "__main__":
-    A = Matrix(2, 3)
-    B = Matrix(3, 2)
+    A = Matrix([[2,3],[2,3]])
+    B = Matrix([[3,2],[3,2]])
     print(A + B)
