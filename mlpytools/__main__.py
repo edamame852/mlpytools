@@ -1,8 +1,10 @@
 import numpy as np
+from mlpytools.LinearRegression import LinearRegression
 
 def main():
     print("Hello World")
-    print(np.__version__)
+    hi = LinearRegression([1,2,3],[4,5,6])
+    print(hi.fit())
 
 
 def stop():
