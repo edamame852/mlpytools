@@ -33,8 +33,8 @@ class LinearRegression:
         return m,c
         
 
-    def predict(self):
-        return self.intercept_ + X @ self.coef_
+    def predict(self, new_x):
+        return new_x * self.fit()[0] + self.fit()[1]
 
     def score(self, X, y):
         y_pred = self.predict(X)
