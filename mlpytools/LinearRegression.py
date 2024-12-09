@@ -26,7 +26,7 @@ class LinearRegression:
         
         m = (n*xy_sum - x_sum*y_sum)/(n*x2_sum - x_sum**2)
         c = (y_sum*x2_sum - x_sum*xy_sum)/(n*x2_sum - x_sum**2)
-        if str(m).split(".")[1] != "0" or str(c).split(".")[1] != "0":
+        if str(m).split(".")[1] != "0" and str(c).split(".")[1] != "0":
             print(f"The estimate is y = {m}x + {c}")
         else:
             print(f"The estimate is y = {int(m)}x + {int(c)}")
