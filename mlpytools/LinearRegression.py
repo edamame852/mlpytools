@@ -34,7 +34,7 @@ class LinearRegression:
         
 
     def predict(self, new_x):
-        return new_x * self.fit()[0] + self.fit()[1]
+        return new_x * self.fit()[0] + self.fit()[1] #Prediction on a 2D level
 
     def score(self, X, y):
         y_pred = self.predict(X)
